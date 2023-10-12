@@ -1,0 +1,14 @@
+.img1 span {
+  color: #717171;
+}
+
+.ligne1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 10px;
+}
+
+.ligne1 img, .ligne2 img {
+  width: 276.8px;
+  height: 262.95px;
+}/*# sourceMappingURL=style.css.map */
