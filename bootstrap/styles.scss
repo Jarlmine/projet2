@@ -1,0 +1,145 @@
+$font: 'Helvetica Neue', sans-serif;
+$fontsize: 12px;
+
+header
+{
+    #navbarSupportedContent
+    {
+
+    }
+    font-size: 15px;
+}
+nav 
+{
+    margin: 5px;
+    
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+    
+}
+.text p
+{
+    margin: 1px;
+}
+header::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #000; /* Bordure inférieure solide de 1 pixel de couleur noire */
+}
+.icon{
+    margin-top: 20px;    
+    .my-custom-button 
+    {
+        color: $colors; /* Couleur du texte par défaut  /* Rembourrage par défaut */
+        transition: color 0.3s; /* Animation de transition de la couleur du texte */        
+    }
+
+    .my-custom-button:hover p {
+        color: #000;
+      }
+    .scroll
+    {
+        border-radius: 60px;
+        margin-top: -10px;
+    }
+
+    img
+    {
+        width: 24px;
+        height: 24px;
+
+    }
+}
+
+span
+{
+    color: $colors;
+}
+.col 
+{
+    margin-bottom: 3rem;
+    .note
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .etoile
+    {
+        width: 30px
+    }
+    img 
+    {
+    
+        border-radius: 6%;
+
+    }
+} 
+@media all and (min-width: 769px) and (max-width: 1025px)
+{
+    body
+    {
+        font-size: $fontsize;
+    }
+    .col
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #MM
+    {
+        display: none;
+    }
+    #navbarSupportedContent
+    {
+        
+    }
+    
+
+}
+@media all and (min-width: 320px) and (max-width: 425px)
+{
+    .icon 
+    {
+        .my-custom-button
+        {
+            
+        }
+        p
+        {
+            font-size: $fontsize;
+        }
+    }
+    #ll
+    {
+        display:none
+    }
+    #MM
+    {
+        display: none;
+    }
+    #navbarSupportedContent
+    {
+        display: none;
+    }
+    body
+    {
+        font-size: $fontsize;
+    }
+    .row 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

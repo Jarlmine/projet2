@@ -1,0 +1,99 @@
+@charset "UTF-8";
+header {
+  font-size: 15px;
+}
+nav {
+  margin: 5px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.text p {
+  margin: 1px;
+}
+
+header::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #000; /* Bordure inférieure solide de 1 pixel de couleur noire */
+}
+
+.icon {
+  margin-top: 20px;
+}
+.icon .my-custom-button {
+  color: #717171; /* Couleur du texte par défaut  /* Rembourrage par défaut */
+  transition: color 0.3s; /* Animation de transition de la couleur du texte */
+}
+.icon .my-custom-button:hover p {
+  color: #000;
+}
+.icon .scroll {
+  border-radius: 60px;
+  margin-top: -10px;
+}
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+span {
+  color: #717171;
+}
+
+.col {
+  margin-bottom: 3rem;
+}
+.col .note {
+  display: flex;
+  justify-content: space-between;
+}
+.col .etoile {
+  width: 30px;
+}
+.col img {
+  border-radius: 6%;
+}
+
+@media all and (min-width: 768px) and (max-width: 1025px) {
+  body {
+    font-size: 12px;
+  }
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  #MM {
+    display: none;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 425px) {
+  .icon p {
+    font-size: 12px;
+  }
+  #ll {
+    display: none;
+  }
+  #MM {
+    display: none;
+  }
+  #navbarSupportedContent {
+    display: none;
+  }
+  body {
+    font-size: 12px;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=styles.css.map */
